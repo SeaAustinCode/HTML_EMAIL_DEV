@@ -1,7 +1,3 @@
-Links and Buttons 
-Some guidelines: 
-- use descriptive links 
-- embrace lnk conventions
-- don't use images for buttons
+An introductory repository to display email templates. 
 
-Buttons.html for examples
+Currently a WORK IN PROGRESS 
