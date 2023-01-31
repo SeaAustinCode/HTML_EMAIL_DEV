@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Welcome to Hogwarts</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+        /* CLIENT-SPECIFIC STYLES */
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* RESET STYLES */
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+
+        html {
+            box-sizing: border-box;
+            height: 100%;
+            width: 100%;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+
+        /* iOS BLUE LINKS */
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* GMAIL BLUE LINKS */
+        u+#body a {
+            color: inherit;
+            text-decoration: none;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+        }
+
+        /* SAMSUNG MAIL BLUE LINKS */
+        #MessageViewBody a {
+            color: inherit;
+            text-decoration: none;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+        }
+
+        /* Universal styles for links and stuff */
+        a {
+            color: #229efd;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #fd6350;
+            text-decoration: none;
+        }
+
+        a.button:hover {
+            background-color: #000000 !important;
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 24px !important;
+            }
+
+            /* Hide labels and display content by default on mobile */
+            label {
+                display: none !important;
+            }
+
+            .slide {
+                display: block !important;
+                max-width: 600px !important;
+                width: 100% !important;
+            }
+        }
+
+        /* Interactivity */
+
+        /* Hide inputs */
+        input {
+            display: none;
+        }
+
+        /* Make labels look clickable */
+        label {
+            cursor: pointer;
+        }
+
+        /* Hide slides */
+        .slide {
+            display: none;
+        }
+
+        /* Show checked slide */
+        #slide1:checked~.slide1,
+        #slide2:checked~.slide2,
+        #slide3:checked~.slide3,
+        #slide4:checked~.slide4 {
+            display: block;
+        }
+
+        /* Make the label look active */
+        #slide1:checked~.slide-label1 {
+            border: 2px solid red !important;
+        }
+    </style>
+</head>
+
+<body id="body" style="margin: 0 !important; padding: 0 !important;">
+
+    <!-- Preview text for the inbox -->
+    <div style="display: none; max-height: 0; overflow: hidden;">
+        Congrats! You have been accepted into Hogwarts School of Witchcraft and Wizardry.
+    </div>
+
+    <!--[if (gte mso 9)|(IE)]>
+		<table cellspacing="0" cellpadding="0" border="0" width="600" align="center" role="presentation"><tr><td>
+		<![endif]-->
+
+    <div
+        style="background-color: #bebebe; color: #000000; font-family: sans-serif; font-size: 18px; line-height: 36px; margin: 0 auto; max-width: 600px; padding: 40px 20px 40px 20px;">
+
+
+        <!-- Logo image -->
+        <center>
+            <img src="hp_logo.png" alt="" width="100" border="0"
+                style="border-radius: 40px; display: block; margin: 20px auto 20px auto;">
+        </center>
+
+        <!-- Headline -->
+        <h1 style="margin: 60px auto 60px auto; text-align: center;">Welcome to Hogwarts!</h1>
+
+        <!-- Triggers for switching content -->
+        <input type="radio" name="slides" id="slide1" checked>
+        <input type="radio" name="slides" id="slide2">
+        <input type="radio" name="slides" id="slide3">
+        <input type="radio" name="slides" id="slide4">
+
+        <div style="margin-bottom: 20px; text-align: center;">
+            <label class="slide-label1" for="slide1"
+                style="border: 2px solid #000000; display: inline-block; margin: 5px; padding: 4px 15px;">
+                Gryffindor
+                </label>
+            <label class="slide-label" for="slide2"
+                style="border: 2px solid #000000; display: inline-block; margin: 10px; padding: 4px 15px;">
+                Slytherin</label>
+            <label class="slide-label" for="slide3"
+                style="border: 2px solid #000000; display: inline-block; margin: 10px; padding: 4px 15px;">
+                Hufflepuff</label>
+            <label class="slide-label" for="slide4"
+                style="border: 2px solid #000000; display: inline-block; margin: 10px; padding: 4px 15px;">
+                Ravenclaw
+                </label>
+        </div>
+
+        <!-- Content to be switched -->
+        <div class="slide slide1" style="background-color: #740001; padding: 20px; color: #d3a625; border-radius: 10px;">
+            <h2 style="margin: 0 0 20px 0;">Gryffindor</h2>
+            <p style="margin: 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="slide slide2" style="background-color: #1a472a; padding: 20px; color: #aaaaaa; border-radius: 10px;">
+            <h2 style="margin: 0 0 20px 0;">Slytherin</h2>
+            <p style="margin: 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="slide slide3" style="background-color: #0e1a40; padding: 20px; color:#946b2d; border-radius: 10px; ">
+            <h2 style="margin: 0 0 20px 0;">Ravenclaw</h2>
+            <p style="margin: 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="slide slide4" style="background-color: #ecb939; padding: 20px; color: #372e29; border-radius: 10px;">
+            <h2 style="margin: 0 0 20px 0;">Hufflepuff</h2>
+            <p style="margin: 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <!-- Body copy -->
+        <p style="margin: 60px 0 20px 0;">Founded in the 10th century by Godric Godric Gryffindor, Rowena Ravenclaw, Helga Hufflepuff and Salazar
+            Slytherin, Hogwarts was established in the Highlands of Scotland to educate young wizards and witches.</p>
+
+        <!-- Button -->
+        <!-- CTA generated by buttons.com -->
+        <div style="margin: 60px 0 60px 0; text-align: center;">
+            <!--[if mso]>
+				<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://thebetter.email" style="height:60px;v-text-anchor:middle;width:200px;" arcsize="7%" stroke="f" fillcolor="#229efd">
+			    <w:anchorlock/>
+			    <center>
+				<![endif]-->
+            <a class="button" href="https://www.wizardingworld.com/"
+                style="background-color:#740001;border-radius:4px;color:#D3A625;display:inline-block;font-family:sans-serif;font-size:18px;font-weight:bold;line-height:60px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;">
+                Explore Hogwarts
+            </a>
+            <!--[if mso]>
+			    </center>
+				</v:roundrect>
+				<![endif]-->
+        </div>
+
+        <!-- Footer information. Always include an unsubscribe link! -->
+        <div style="color: #888888; font-size: 16px; margin: 2em 0 0 0; text-align: center;">
+            <p style="margin: 0 0 20px 0;">To unsubscribe or deny enrollment click <a href="#">here</a></p>
+            <p style="margin: 0 0 20px 0;">Albus Dumbledore - Headmaster of Hogwarts</p>
+        </div>
+
+    </div>
+    <!--[if (gte mso 9)|(IE)]>
+		</td></tr></table>
+		<![endif]-->
+
+</body>
+
+</html>
